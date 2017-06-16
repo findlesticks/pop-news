@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Logo from '../components/logo'
 
 export default () => (
   <div className="root">
@@ -24,7 +23,7 @@ export default () => (
       }
     `}</style>
 
-    <h1><Logo style={{ height: '1.45rem' }}/> Next.js on Heroku</h1>
+    <h1>Next.js on Heroku</h1>
 
     <p>Deploy <a href="https://zeit.co/blog/next">Next.js</a> universal web apps on <a href="https://www.heroku.com/home">Heroku</a>.</p>
 
