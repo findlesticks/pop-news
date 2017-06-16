@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/mars/heroku-nextjs#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "glamor": "^2.20.25",
     "next": "^2.3.1",
     "react": "^15.4.2",
