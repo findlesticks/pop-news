@@ -6,6 +6,7 @@ export default function Header() {
    <nav>
     <Link href='/'><a>Home</a></Link>
     <a href='/feed'>Your feed</a>
+    <Link href='/about'>About Us</Link>
    </nav>
  );
 }
