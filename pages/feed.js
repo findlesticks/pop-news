@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Head from 'next/head';
+import Head from '../components/head'
 
 import Header from '../components/header';
 import Feed from '../components/feed';
@@ -16,10 +16,6 @@ export default class FeedPage extends Component {
     return (
       <div {...root}>
         <Head>
-          <meta charSet="utf-8"/>
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="stylesheet" type="text/css" href="../components/feed.css"/>
           <title>Your personalised news feed</title>
         </Head>
         <Header />

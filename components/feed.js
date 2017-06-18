@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { css } from 'glamor';
+import { ulCss } from './rules/feed';
 
 import fetchNews from '../lib/fetchNews';
 import Card from './card';
 import SourceTitle from './sourceTitle';
-
-let setState;
-
-const ulCss = css({ width: '100%', padding: '0 40px' });
 
 export default class Feed extends Component {
   render() {
