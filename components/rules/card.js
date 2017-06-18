@@ -1,15 +1,27 @@
 import { css } from 'glamor';
 
+const imageHeight = '150px';
+export const titleHeight = 50;
+const cardWidth = '300px';
+
 export const imageRule = css({
   width: '100%',
-  'maxWidth': '400px',
-  filter: 'brightness(.6)',
-  WebkitFilter: 'brightness(.6)',
+});
+
+export const imageContainerRule = css({
+  width: '100%',
+  height: imageHeight,
+  overflow: 'hidden',
+});
+
+export const linkRule = css({
+  textDecoration: 'none',
 });
 
 export const cardRule = css({
-  maxWidth: '300px',
+  maxWidth: cardWidth,
   width: '100%',
+  height: imageHeight + `${titleHeight}px`,
   border: '4px solid black',
   listStyle: 'none',
   margin: '10px',
@@ -19,11 +31,12 @@ export const cardRule = css({
 });
 
 export const titleRule = css({
-  zIndex: 2,
-  position: 'absolute',
-  fontSize: '20',
-  maxWidth: '300px',
-  lineHeight: '20px',
-  margin: 4,
-  color: 'white',
-})
+  height: titleHeight,
+  fontSize: '16',
+  margin: '0 4px',
+  lineHeight: `${titleHeight/2}px`,
+  color: 'black',
+  textOverflow: 'ellipses',
+  textDecoration: 'none',
+  fontWeight: '700',
+});

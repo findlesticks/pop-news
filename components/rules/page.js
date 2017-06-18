@@ -1,4 +1,7 @@
 import { css } from 'glamor';
+import breakpoints from '../constants/breakpoints';
+
+const respondToMobile = `@media (min-width: ${breakpoints.mobile})`;
 
 export const root = css({
   maxWidth: '1000px',
@@ -8,7 +11,7 @@ export const root = css({
   marginTop: '8vh',
   marginLeft: 'auto',
   marginRight: 'auto',
-  '@media (min-width: 600px)': {
+  [respondToMobile]: {
     // Mobile styles
   },
 });
